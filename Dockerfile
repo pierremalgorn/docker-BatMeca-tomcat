@@ -24,7 +24,7 @@ RUN mv src/main/java/views.properties src/main/resources
 #Compilation de l'appli
 RUN mvn package
 #Déploiement
-RUN mv target/batmeca2014.war ../tomcat/webapps
+RUN mv target/batmeca.war ../tomcat/webapps
 
 #Copie des dépendances et fichiers nécessaires
 RUN mkdir -p /opt/batmeca/resources
